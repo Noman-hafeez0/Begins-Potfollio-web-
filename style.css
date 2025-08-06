@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&family=Orbitron:wght@800&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to top, #97d9e1 0%, #97d9e1 100%);
+}
+
+header {
+    margin-top: 40px;
+
+}
+
+
+#head {
+    width: 100%;
+    display: inline;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-family: 'Cormorant Garamond', serif;
+
+    margin-left: 100px;
+    font-size: 30px;
+    color: #000000;
+}
+
+#logotxt {
+    font-family: 'Playfair Display', serif;
+    margin-left: 380px;
+    font-size: 20px;
+}
+
+#head button {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 350px;
+    display: inline;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    width: 150px;
+    color: rgb(0, 0, 0);
+    height: 50px;
+    border: 0px;
+    letter-spacing: 1px;
+    border: 2px solid black;
+}
+
+#head button i {
+    padding-right: 10px;
+}
+
+#head button:hover {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navbar a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+    width: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid black;
+}
+
+.main {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main img {
+    margin-left: 200px;
+    margin-top: 50px;
+    height: 400px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    transition: height 0.4s ease-in-out;
+}
+
+.main img:hover {
+    height: 430px;
+}
+.main #intro {
+    margin-left: 600px;
+    margin-top: -300px;
+}
+
+.main span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.main p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    margin-right: 100px;
+
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    margin-top: 300px;
+    text-align: center;
+}
+
+/* Your existing styles preserved as-is */
+
+.interest {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    text-align: center;
+    height: 100vh;
+}
+
+
+
+
+.img-box1 {
+    position: relative;
+    width: 250px;
+    height: 430px;
+    overflow: hidden;
+    margin-left: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+
+}
+
+#img-box2 {
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+}
+
+#img-box3 {
+    height: 180px;
+    width: 320px;
+    margin-left: 30px;
+}
+
+#img-box4 {
+    height: 430px;
+    margin-left: 30px;
+    width: 250px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-box5 {
+    height: 150px;
+    width: 300px;
+    position: relative;
+    margin-top: 320px;
+    margin-left: -300px;
+}
+
+#img-box6 {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: -300px;
+}
+
+/* Default image layer */
+.img-box1 .img-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+    z-index: 1;
+    background-image: url('uchiha.jpg');
+    /* fallback */
+}
+
+/* Set unique images per box */
+#img-box1 .img-layer {
+    background-image: url('uchiha.jpg');
+}
+
+#img-box2 .img-layer {
+    background-image: url('goat.jpg');
+}
+
+#img-box3 .img-layer {
+    background-image: url('toji.jpg');
+}
+
+#img-box4 .img-layer {
+    background-image: url('UCHIHA\ MADARA.jpg');
+}
+
+#img-box5 .img-layer {
+    background-image: url('kk.jpg');
+}
+
+#img-box6 .img-layer {
+    background-image: url('jojo.jpg');
+}
+
+/* Overlay */
+.img-box1 .text-overlay {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.img-box1 .text-overlay span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #dfe7f0;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Hover Effects */
+.img-box1:hover .img-layer {
+    filter: blur(4px);
+}
+
+.img-box1:hover .text-overlay {
+    opacity: 1;
+}
+
+
+.contact {
+    background: #121212;
+    color: #f5f5f5;
+    padding: 40px;
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.contact hr {
+    border: 0;
+    height: 1px;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 10px 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px #00f7ff66;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 97%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00c2cc;
+    
+}
